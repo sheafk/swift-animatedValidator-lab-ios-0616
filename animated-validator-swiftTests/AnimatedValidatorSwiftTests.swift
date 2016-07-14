@@ -17,6 +17,7 @@ class ValidatorViewController: QuickSpec {
     override func spec() {
         
         let tester = KIFUITestActor()
+        @IBOutlet weak var submitConstraintY: NSLayoutConstraint!
         
         let submitButton =  tester.waitForViewWithAccessibilityLabel(Constants.SUBMITBUTTON) as! UIButton
         
